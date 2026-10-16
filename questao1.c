@@ -6,7 +6,7 @@ typedef struct {
     int freq;
 } Elemento;
 
-// Função para comparar a frequência (decrescente) e o valor (caso de empate)
+// função para comparar a frequência (decrescente) e o valor (caso de empate)
 int comparar(const void *a, const void *b) {
     Elemento *elemA = (Elemento *)a;
     Elemento *elemB = (Elemento *)b;
@@ -14,7 +14,7 @@ int comparar(const void *a, const void *b) {
     if (elemB->freq != elemA->freq) {
         return elemB->freq - elemA->freq; // Ordem decrescente de frequência
     }
-    return elemB->valor - elemA->valor;   // Desempate por valor
+    return elemB->valor - elemA->valor;   // desempate por valor
 }
 
 int main() {
